@@ -1,0 +1,699 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D202F0F71D3F5F2A00F8410D /* whiteBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D202F0F51D3F5F2A00F8410D /* whiteBG@2x.png */; };
+		D202F0FA1D3F619600F8410D /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = D202F0F91D3F619600F8410D /* UIImage+RoundedCorner.m */; };
+		D2B834DA1D40726B00F5BD41 /* picture@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2B834D91D40726B00F5BD41 /* picture@2x.png */; };
+		D2CB9F751D3C8560000194C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CB9F741D3C8560000194C2 /* main.m */; };
+		D2CB9F781D3C8560000194C2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CB9F771D3C8560000194C2 /* AppDelegate.m */; };
+		D2CB9F7B1D3C8560000194C2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CB9F7A1D3C8560000194C2 /* ViewController.m */; };
+		D2CB9F7E1D3C8560000194C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2CB9F7C1D3C8560000194C2 /* Main.storyboard */; };
+		D2CB9F811D3C8560000194C2 /* QRDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D2CB9F7F1D3C8560000194C2 /* QRDemo.xcdatamodeld */; };
+		D2CB9F831D3C8560000194C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2CB9F821D3C8560000194C2 /* Assets.xcassets */; };
+		D2CB9F861D3C8560000194C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2CB9F841D3C8560000194C2 /* LaunchScreen.storyboard */; };
+		D2CB9F911D3C8560000194C2 /* QRDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CB9F901D3C8560000194C2 /* QRDemoTests.m */; };
+		D2CB9F9C1D3C8561000194C2 /* QRDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CB9F9B1D3C8561000194C2 /* QRDemoUITests.m */; };
+		D2CB9FB91D3C8587000194C2 /* PictureNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = D2CB9FAA1D3C8587000194C2 /* PictureNormal.png */; };
+		D2CB9FBA1D3C8587000194C2 /* qr_bottom_left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2CB9FAB1D3C8587000194C2 /* qr_bottom_left@2x.png */; };
+		D2CB9FBB1D3C8587000194C2 /* qr_bottom_left@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2CB9FAC1D3C8587000194C2 /* qr_bottom_left@3x.png */; };
+		D2CB9FBC1D3C8587000194C2 /* qr_bottom_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2CB9FAD1D3C8587000194C2 /* qr_bottom_right@2x.png */; };
+		D2CB9FBD1D3C8587000194C2 /* qr_bottom_right@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2CB9FAE1D3C8587000194C2 /* qr_bottom_right@3x.png */; };
+		D2CB9FBE1D3C8587000194C2 /* qr_scan_line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2CB9FAF1D3C8587000194C2 /* qr_scan_line@2x.png */; };
+		D2CB9FBF1D3C8587000194C2 /* qr_scan_line@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2CB9FB01D3C8587000194C2 /* qr_scan_line@3x.png */; };
+		D2CB9FC01D3C8587000194C2 /* qr_top_left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2CB9FB11D3C8587000194C2 /* qr_top_left@2x.png */; };
+		D2CB9FC11D3C8587000194C2 /* qr_top_left@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2CB9FB21D3C8587000194C2 /* qr_top_left@3x.png */; };
+		D2CB9FC21D3C8587000194C2 /* qr_top_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2CB9FB31D3C8587000194C2 /* qr_top_right@2x.png */; };
+		D2CB9FC31D3C8587000194C2 /* qr_top_right@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2CB9FB41D3C8587000194C2 /* qr_top_right@3x.png */; };
+		D2CB9FC41D3C8587000194C2 /* qr_vc_left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2CB9FB51D3C8587000194C2 /* qr_vc_left@2x.png */; };
+		D2CB9FC51D3C8587000194C2 /* qr_vc_left@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2CB9FB61D3C8587000194C2 /* qr_vc_left@3x.png */; };
+		D2CB9FC61D3C8587000194C2 /* qr_vc_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2CB9FB71D3C8587000194C2 /* qr_vc_right@2x.png */; };
+		D2CB9FC71D3C8587000194C2 /* qr_vc_right@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2CB9FB81D3C8587000194C2 /* qr_vc_right@3x.png */; };
+		D2CB9FCB1D3C863A000194C2 /* BJQRCodeViewfinder.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CB9FCA1D3C863A000194C2 /* BJQRCodeViewfinder.m */; };
+		D2CB9FCF1D3C86D0000194C2 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CB9FCE1D3C86D0000194C2 /* UIView+Frame.m */; };
+		D2CB9FD21D3C8AC7000194C2 /* BJScanQRCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CB9FD11D3C8AC7000194C2 /* BJScanQRCodeController.m */; };
+		D2CB9FD51D3CB118000194C2 /* BJQRCodeDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CB9FD41D3CB118000194C2 /* BJQRCodeDevice.m */; };
+		D2DDDB721D3E06D500850B9A /* BJReadQRCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DDDB711D3E06D500850B9A /* BJReadQRCodeController.m */; };
+		D2DDDB751D3E076700850B9A /* BJCheckSystemRight.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DDDB741D3E076700850B9A /* BJCheckSystemRight.m */; };
+		D2DDDB781D3E217D00850B9A /* BJCreateQRCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DDDB771D3E217D00850B9A /* BJCreateQRCodeController.m */; };
+		D2DDDB7B1D3E31AD00850B9A /* BJCreateQRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DDDB7A1D3E31AD00850B9A /* BJCreateQRCode.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D2CB9F8D1D3C8560000194C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2CB9F681D3C8560000194C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2CB9F6F1D3C8560000194C2;
+			remoteInfo = QRDemo;
+		};
+		D2CB9F981D3C8561000194C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2CB9F681D3C8560000194C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2CB9F6F1D3C8560000194C2;
+			remoteInfo = QRDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D202F0F51D3F5F2A00F8410D /* whiteBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whiteBG@2x.png"; sourceTree = "<group>"; };
+		D202F0F81D3F619600F8410D /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
+		D202F0F91D3F619600F8410D /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
+		D2B834D91D40726B00F5BD41 /* picture@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "picture@2x.png"; sourceTree = "<group>"; };
+		D2CB9F701D3C8560000194C2 /* QRDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2CB9F741D3C8560000194C2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D2CB9F761D3C8560000194C2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D2CB9F771D3C8560000194C2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D2CB9F791D3C8560000194C2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D2CB9F7A1D3C8560000194C2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D2CB9F7D1D3C8560000194C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D2CB9F801D3C8560000194C2 /* QRDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QRDemo.xcdatamodel; sourceTree = "<group>"; };
+		D2CB9F821D3C8560000194C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D2CB9F851D3C8560000194C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D2CB9F871D3C8560000194C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2CB9F8C1D3C8560000194C2 /* QRDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QRDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2CB9F901D3C8560000194C2 /* QRDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRDemoTests.m; sourceTree = "<group>"; };
+		D2CB9F921D3C8560000194C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2CB9F971D3C8561000194C2 /* QRDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QRDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2CB9F9B1D3C8561000194C2 /* QRDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRDemoUITests.m; sourceTree = "<group>"; };
+		D2CB9F9D1D3C8561000194C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2CB9FAA1D3C8587000194C2 /* PictureNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PictureNormal.png; sourceTree = "<group>"; };
+		D2CB9FAB1D3C8587000194C2 /* qr_bottom_left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qr_bottom_left@2x.png"; sourceTree = "<group>"; };
+		D2CB9FAC1D3C8587000194C2 /* qr_bottom_left@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qr_bottom_left@3x.png"; sourceTree = "<group>"; };
+		D2CB9FAD1D3C8587000194C2 /* qr_bottom_right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qr_bottom_right@2x.png"; sourceTree = "<group>"; };
+		D2CB9FAE1D3C8587000194C2 /* qr_bottom_right@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qr_bottom_right@3x.png"; sourceTree = "<group>"; };
+		D2CB9FAF1D3C8587000194C2 /* qr_scan_line@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qr_scan_line@2x.png"; sourceTree = "<group>"; };
+		D2CB9FB01D3C8587000194C2 /* qr_scan_line@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qr_scan_line@3x.png"; sourceTree = "<group>"; };
+		D2CB9FB11D3C8587000194C2 /* qr_top_left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qr_top_left@2x.png"; sourceTree = "<group>"; };
+		D2CB9FB21D3C8587000194C2 /* qr_top_left@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qr_top_left@3x.png"; sourceTree = "<group>"; };
+		D2CB9FB31D3C8587000194C2 /* qr_top_right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qr_top_right@2x.png"; sourceTree = "<group>"; };
+		D2CB9FB41D3C8587000194C2 /* qr_top_right@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qr_top_right@3x.png"; sourceTree = "<group>"; };
+		D2CB9FB51D3C8587000194C2 /* qr_vc_left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qr_vc_left@2x.png"; sourceTree = "<group>"; };
+		D2CB9FB61D3C8587000194C2 /* qr_vc_left@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qr_vc_left@3x.png"; sourceTree = "<group>"; };
+		D2CB9FB71D3C8587000194C2 /* qr_vc_right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qr_vc_right@2x.png"; sourceTree = "<group>"; };
+		D2CB9FB81D3C8587000194C2 /* qr_vc_right@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qr_vc_right@3x.png"; sourceTree = "<group>"; };
+		D2CB9FC91D3C863A000194C2 /* BJQRCodeViewfinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJQRCodeViewfinder.h; sourceTree = "<group>"; };
+		D2CB9FCA1D3C863A000194C2 /* BJQRCodeViewfinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJQRCodeViewfinder.m; sourceTree = "<group>"; };
+		D2CB9FCD1D3C86D0000194C2 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		D2CB9FCE1D3C86D0000194C2 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		D2CB9FD01D3C8AC7000194C2 /* BJScanQRCodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJScanQRCodeController.h; sourceTree = "<group>"; };
+		D2CB9FD11D3C8AC7000194C2 /* BJScanQRCodeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJScanQRCodeController.m; sourceTree = "<group>"; };
+		D2CB9FD31D3CB118000194C2 /* BJQRCodeDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJQRCodeDevice.h; sourceTree = "<group>"; };
+		D2CB9FD41D3CB118000194C2 /* BJQRCodeDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJQRCodeDevice.m; sourceTree = "<group>"; };
+		D2DDDB6F1D3DD66600850B9A /* BJQRCodeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BJQRCodeHeader.h; sourceTree = "<group>"; };
+		D2DDDB701D3E06D500850B9A /* BJReadQRCodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJReadQRCodeController.h; sourceTree = "<group>"; };
+		D2DDDB711D3E06D500850B9A /* BJReadQRCodeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJReadQRCodeController.m; sourceTree = "<group>"; };
+		D2DDDB731D3E076700850B9A /* BJCheckSystemRight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJCheckSystemRight.h; sourceTree = "<group>"; };
+		D2DDDB741D3E076700850B9A /* BJCheckSystemRight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJCheckSystemRight.m; sourceTree = "<group>"; };
+		D2DDDB761D3E217D00850B9A /* BJCreateQRCodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJCreateQRCodeController.h; sourceTree = "<group>"; };
+		D2DDDB771D3E217D00850B9A /* BJCreateQRCodeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJCreateQRCodeController.m; sourceTree = "<group>"; };
+		D2DDDB791D3E31AD00850B9A /* BJCreateQRCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJCreateQRCode.h; sourceTree = "<group>"; };
+		D2DDDB7A1D3E31AD00850B9A /* BJCreateQRCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJCreateQRCode.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2CB9F6D1D3C8560000194C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2CB9F891D3C8560000194C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2CB9F941D3C8561000194C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D2CB9F671D3C8560000194C2 = {
+			isa = PBXGroup;
+			children = (
+				D2CB9F721D3C8560000194C2 /* QRDemo */,
+				D2CB9F8F1D3C8560000194C2 /* QRDemoTests */,
+				D2CB9F9A1D3C8561000194C2 /* QRDemoUITests */,
+				D2CB9F711D3C8560000194C2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D2CB9F711D3C8560000194C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2CB9F701D3C8560000194C2 /* QRDemo.app */,
+				D2CB9F8C1D3C8560000194C2 /* QRDemoTests.xctest */,
+				D2CB9F971D3C8561000194C2 /* QRDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2CB9F721D3C8560000194C2 /* QRDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D2CB9FCC1D3C86D0000194C2 /* Category */,
+				D2CB9FC81D3C8613000194C2 /* BJQRcode */,
+				D2CB9FA91D3C8587000194C2 /* Images */,
+				D2CB9F761D3C8560000194C2 /* AppDelegate.h */,
+				D2CB9F771D3C8560000194C2 /* AppDelegate.m */,
+				D2CB9F791D3C8560000194C2 /* ViewController.h */,
+				D2CB9F7A1D3C8560000194C2 /* ViewController.m */,
+				D2CB9F7C1D3C8560000194C2 /* Main.storyboard */,
+				D2CB9F821D3C8560000194C2 /* Assets.xcassets */,
+				D2CB9F841D3C8560000194C2 /* LaunchScreen.storyboard */,
+				D2CB9F871D3C8560000194C2 /* Info.plist */,
+				D2CB9F7F1D3C8560000194C2 /* QRDemo.xcdatamodeld */,
+				D2CB9F731D3C8560000194C2 /* Supporting Files */,
+			);
+			path = QRDemo;
+			sourceTree = "<group>";
+		};
+		D2CB9F731D3C8560000194C2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D2CB9F741D3C8560000194C2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D2CB9F8F1D3C8560000194C2 /* QRDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				D2CB9F901D3C8560000194C2 /* QRDemoTests.m */,
+				D2CB9F921D3C8560000194C2 /* Info.plist */,
+			);
+			path = QRDemoTests;
+			sourceTree = "<group>";
+		};
+		D2CB9F9A1D3C8561000194C2 /* QRDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D2CB9F9B1D3C8561000194C2 /* QRDemoUITests.m */,
+				D2CB9F9D1D3C8561000194C2 /* Info.plist */,
+			);
+			path = QRDemoUITests;
+			sourceTree = "<group>";
+		};
+		D2CB9FA91D3C8587000194C2 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D2B834D91D40726B00F5BD41 /* picture@2x.png */,
+				D202F0F51D3F5F2A00F8410D /* whiteBG@2x.png */,
+				D2CB9FAA1D3C8587000194C2 /* PictureNormal.png */,
+				D2CB9FAB1D3C8587000194C2 /* qr_bottom_left@2x.png */,
+				D2CB9FAC1D3C8587000194C2 /* qr_bottom_left@3x.png */,
+				D2CB9FAD1D3C8587000194C2 /* qr_bottom_right@2x.png */,
+				D2CB9FAE1D3C8587000194C2 /* qr_bottom_right@3x.png */,
+				D2CB9FAF1D3C8587000194C2 /* qr_scan_line@2x.png */,
+				D2CB9FB01D3C8587000194C2 /* qr_scan_line@3x.png */,
+				D2CB9FB11D3C8587000194C2 /* qr_top_left@2x.png */,
+				D2CB9FB21D3C8587000194C2 /* qr_top_left@3x.png */,
+				D2CB9FB31D3C8587000194C2 /* qr_top_right@2x.png */,
+				D2CB9FB41D3C8587000194C2 /* qr_top_right@3x.png */,
+				D2CB9FB51D3C8587000194C2 /* qr_vc_left@2x.png */,
+				D2CB9FB61D3C8587000194C2 /* qr_vc_left@3x.png */,
+				D2CB9FB71D3C8587000194C2 /* qr_vc_right@2x.png */,
+				D2CB9FB81D3C8587000194C2 /* qr_vc_right@3x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		D2CB9FC81D3C8613000194C2 /* BJQRcode */ = {
+			isa = PBXGroup;
+			children = (
+				D2CB9FC91D3C863A000194C2 /* BJQRCodeViewfinder.h */,
+				D2CB9FCA1D3C863A000194C2 /* BJQRCodeViewfinder.m */,
+				D2CB9FD31D3CB118000194C2 /* BJQRCodeDevice.h */,
+				D2CB9FD41D3CB118000194C2 /* BJQRCodeDevice.m */,
+				D2DDDB791D3E31AD00850B9A /* BJCreateQRCode.h */,
+				D2DDDB7A1D3E31AD00850B9A /* BJCreateQRCode.m */,
+				D2DDDB731D3E076700850B9A /* BJCheckSystemRight.h */,
+				D2DDDB741D3E076700850B9A /* BJCheckSystemRight.m */,
+				D2DDDB6F1D3DD66600850B9A /* BJQRCodeHeader.h */,
+				D2CB9FD01D3C8AC7000194C2 /* BJScanQRCodeController.h */,
+				D2CB9FD11D3C8AC7000194C2 /* BJScanQRCodeController.m */,
+				D2DDDB701D3E06D500850B9A /* BJReadQRCodeController.h */,
+				D2DDDB711D3E06D500850B9A /* BJReadQRCodeController.m */,
+				D2DDDB761D3E217D00850B9A /* BJCreateQRCodeController.h */,
+				D2DDDB771D3E217D00850B9A /* BJCreateQRCodeController.m */,
+			);
+			path = BJQRcode;
+			sourceTree = "<group>";
+		};
+		D2CB9FCC1D3C86D0000194C2 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				D2CB9FCD1D3C86D0000194C2 /* UIView+Frame.h */,
+				D2CB9FCE1D3C86D0000194C2 /* UIView+Frame.m */,
+				D202F0F81D3F619600F8410D /* UIImage+RoundedCorner.h */,
+				D202F0F91D3F619600F8410D /* UIImage+RoundedCorner.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D2CB9F6F1D3C8560000194C2 /* QRDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2CB9FA01D3C8561000194C2 /* Build configuration list for PBXNativeTarget "QRDemo" */;
+			buildPhases = (
+				D2CB9F6C1D3C8560000194C2 /* Sources */,
+				D2CB9F6D1D3C8560000194C2 /* Frameworks */,
+				D2CB9F6E1D3C8560000194C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QRDemo;
+			productName = QRDemo;
+			productReference = D2CB9F701D3C8560000194C2 /* QRDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D2CB9F8B1D3C8560000194C2 /* QRDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2CB9FA31D3C8561000194C2 /* Build configuration list for PBXNativeTarget "QRDemoTests" */;
+			buildPhases = (
+				D2CB9F881D3C8560000194C2 /* Sources */,
+				D2CB9F891D3C8560000194C2 /* Frameworks */,
+				D2CB9F8A1D3C8560000194C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2CB9F8E1D3C8560000194C2 /* PBXTargetDependency */,
+			);
+			name = QRDemoTests;
+			productName = QRDemoTests;
+			productReference = D2CB9F8C1D3C8560000194C2 /* QRDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D2CB9F961D3C8561000194C2 /* QRDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2CB9FA61D3C8561000194C2 /* Build configuration list for PBXNativeTarget "QRDemoUITests" */;
+			buildPhases = (
+				D2CB9F931D3C8561000194C2 /* Sources */,
+				D2CB9F941D3C8561000194C2 /* Frameworks */,
+				D2CB9F951D3C8561000194C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2CB9F991D3C8561000194C2 /* PBXTargetDependency */,
+			);
+			name = QRDemoUITests;
+			productName = QRDemoUITests;
+			productReference = D2CB9F971D3C8561000194C2 /* QRDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2CB9F681D3C8560000194C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = zbj;
+				TargetAttributes = {
+					D2CB9F6F1D3C8560000194C2 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					D2CB9F8B1D3C8560000194C2 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = D2CB9F6F1D3C8560000194C2;
+					};
+					D2CB9F961D3C8561000194C2 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = D2CB9F6F1D3C8560000194C2;
+					};
+				};
+			};
+			buildConfigurationList = D2CB9F6B1D3C8560000194C2 /* Build configuration list for PBXProject "QRDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D2CB9F671D3C8560000194C2;
+			productRefGroup = D2CB9F711D3C8560000194C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2CB9F6F1D3C8560000194C2 /* QRDemo */,
+				D2CB9F8B1D3C8560000194C2 /* QRDemoTests */,
+				D2CB9F961D3C8561000194C2 /* QRDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2CB9F6E1D3C8560000194C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2CB9FBD1D3C8587000194C2 /* qr_bottom_right@3x.png in Resources */,
+				D2CB9FC61D3C8587000194C2 /* qr_vc_right@2x.png in Resources */,
+				D2CB9F861D3C8560000194C2 /* LaunchScreen.storyboard in Resources */,
+				D2CB9FC21D3C8587000194C2 /* qr_top_right@2x.png in Resources */,
+				D2CB9FC31D3C8587000194C2 /* qr_top_right@3x.png in Resources */,
+				D202F0F71D3F5F2A00F8410D /* whiteBG@2x.png in Resources */,
+				D2CB9FC51D3C8587000194C2 /* qr_vc_left@3x.png in Resources */,
+				D2CB9FBA1D3C8587000194C2 /* qr_bottom_left@2x.png in Resources */,
+				D2CB9FC41D3C8587000194C2 /* qr_vc_left@2x.png in Resources */,
+				D2CB9FC71D3C8587000194C2 /* qr_vc_right@3x.png in Resources */,
+				D2CB9FC01D3C8587000194C2 /* qr_top_left@2x.png in Resources */,
+				D2B834DA1D40726B00F5BD41 /* picture@2x.png in Resources */,
+				D2CB9FBE1D3C8587000194C2 /* qr_scan_line@2x.png in Resources */,
+				D2CB9FBC1D3C8587000194C2 /* qr_bottom_right@2x.png in Resources */,
+				D2CB9FBF1D3C8587000194C2 /* qr_scan_line@3x.png in Resources */,
+				D2CB9FB91D3C8587000194C2 /* PictureNormal.png in Resources */,
+				D2CB9F831D3C8560000194C2 /* Assets.xcassets in Resources */,
+				D2CB9FBB1D3C8587000194C2 /* qr_bottom_left@3x.png in Resources */,
+				D2CB9F7E1D3C8560000194C2 /* Main.storyboard in Resources */,
+				D2CB9FC11D3C8587000194C2 /* qr_top_left@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2CB9F8A1D3C8560000194C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2CB9F951D3C8561000194C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2CB9F6C1D3C8560000194C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2DDDB781D3E217D00850B9A /* BJCreateQRCodeController.m in Sources */,
+				D2CB9FCF1D3C86D0000194C2 /* UIView+Frame.m in Sources */,
+				D2CB9FD21D3C8AC7000194C2 /* BJScanQRCodeController.m in Sources */,
+				D2DDDB721D3E06D500850B9A /* BJReadQRCodeController.m in Sources */,
+				D2CB9F7B1D3C8560000194C2 /* ViewController.m in Sources */,
+				D2DDDB751D3E076700850B9A /* BJCheckSystemRight.m in Sources */,
+				D2CB9FCB1D3C863A000194C2 /* BJQRCodeViewfinder.m in Sources */,
+				D202F0FA1D3F619600F8410D /* UIImage+RoundedCorner.m in Sources */,
+				D2CB9F781D3C8560000194C2 /* AppDelegate.m in Sources */,
+				D2CB9F751D3C8560000194C2 /* main.m in Sources */,
+				D2DDDB7B1D3E31AD00850B9A /* BJCreateQRCode.m in Sources */,
+				D2CB9FD51D3CB118000194C2 /* BJQRCodeDevice.m in Sources */,
+				D2CB9F811D3C8560000194C2 /* QRDemo.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2CB9F881D3C8560000194C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2CB9F911D3C8560000194C2 /* QRDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2CB9F931D3C8561000194C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2CB9F9C1D3C8561000194C2 /* QRDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D2CB9F8E1D3C8560000194C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2CB9F6F1D3C8560000194C2 /* QRDemo */;
+			targetProxy = D2CB9F8D1D3C8560000194C2 /* PBXContainerItemProxy */;
+		};
+		D2CB9F991D3C8561000194C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2CB9F6F1D3C8560000194C2 /* QRDemo */;
+			targetProxy = D2CB9F981D3C8561000194C2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D2CB9F7C1D3C8560000194C2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2CB9F7D1D3C8560000194C2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D2CB9F841D3C8560000194C2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2CB9F851D3C8560000194C2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D2CB9F9E1D3C8561000194C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D2CB9F9F1D3C8561000194C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D2CB9FA11D3C8561000194C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = QRDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zcyx.QRDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D2CB9FA21D3C8561000194C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = QRDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zcyx.QRDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D2CB9FA41D3C8561000194C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = QRDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zcyx.QRDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QRDemo.app/QRDemo";
+			};
+			name = Debug;
+		};
+		D2CB9FA51D3C8561000194C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = QRDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zcyx.QRDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QRDemo.app/QRDemo";
+			};
+			name = Release;
+		};
+		D2CB9FA71D3C8561000194C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = QRDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zcyx.QRDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = QRDemo;
+			};
+			name = Debug;
+		};
+		D2CB9FA81D3C8561000194C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = QRDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zcyx.QRDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = QRDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D2CB9F6B1D3C8560000194C2 /* Build configuration list for PBXProject "QRDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2CB9F9E1D3C8561000194C2 /* Debug */,
+				D2CB9F9F1D3C8561000194C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2CB9FA01D3C8561000194C2 /* Build configuration list for PBXNativeTarget "QRDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2CB9FA11D3C8561000194C2 /* Debug */,
+				D2CB9FA21D3C8561000194C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2CB9FA31D3C8561000194C2 /* Build configuration list for PBXNativeTarget "QRDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2CB9FA41D3C8561000194C2 /* Debug */,
+				D2CB9FA51D3C8561000194C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2CB9FA61D3C8561000194C2 /* Build configuration list for PBXNativeTarget "QRDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2CB9FA71D3C8561000194C2 /* Debug */,
+				D2CB9FA81D3C8561000194C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D2CB9F7F1D3C8560000194C2 /* QRDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D2CB9F801D3C8560000194C2 /* QRDemo.xcdatamodel */,
+			);
+			currentVersion = D2CB9F801D3C8560000194C2 /* QRDemo.xcdatamodel */;
+			path = QRDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D2CB9F681D3C8560000194C2 /* Project object */;
+}
