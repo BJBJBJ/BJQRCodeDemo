@@ -136,9 +136,6 @@
     
     
 }
--(void)dealloc{
-    [self removeTimer];
-}
 
 +(instancetype)qrCodeViewfinder{
     return [[self alloc] init];
@@ -168,4 +165,8 @@
         
     }];
 }
+-(void)dealloc{
+    [self removeTimer];
+}
+
 @end

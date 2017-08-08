@@ -5,6 +5,7 @@
 //  Created by zbj-mac on 16/7/19.
 //  Copyright © 2016年 zbj. All rights reserved.
 //
+//读取二维码
 
 #import <UIKit/UIKit.h>
 
