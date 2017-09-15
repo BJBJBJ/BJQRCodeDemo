@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
     <key>NSCameraUsageDescription</key>
-    <string>伙锅需要使用您的相机</string>
+    <string>需要使用您的相机</string>
     <key>NSPhotoLibraryUsageDescription</key>
-    <string>伙锅需要访问您的相册</string>
+    <string>需要访问您的相册</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>

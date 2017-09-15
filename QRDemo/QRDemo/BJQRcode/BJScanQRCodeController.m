@@ -23,7 +23,7 @@
     }
     return _qrCodeViewfinder;
 }
--(BJQRCodeDevice *)qrDevice{
+-(BJQRCodeDevice *)qrCodeDevice{
     if (!_qrCodeDevice) {
         _qrCodeDevice=[BJQRCodeDevice qrCodeDevice];
     }
@@ -32,18 +32,50 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self checkright];
-    [self scanQRCodeCallBack];
+  
     
 }
+
 /** 检查权限*/
 -(void)checkright{
     WS(ws)
     [BJCheckSystemRight checkCameraRightCallBack:^(NSError *error) {
         if (!error) {
-            [ws startScan];
+            
+            
+            if([NSThread isMainThread]){
+                
+                   [ws startScan];
+            }
+            else{
+                
+                [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+                    
+                       [ws startScan];
+                }];
+                
+            }
+
+            
+         
         }else{
-            UIAlertView *altert=[[UIAlertView alloc] initWithTitle:@"error" message:error.domain delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:nil, nil];
-            [altert show];
+            
+            if([NSThread isMainThread]){
+                
+                UIAlertView *altert=[[UIAlertView alloc] initWithTitle:@"error" message:error.domain delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:nil, nil];
+                [altert show];
+
+            }
+            else{
+            
+                [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+                    
+                    UIAlertView *altert=[[UIAlertView alloc] initWithTitle:@"error" message:error.domain delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:nil, nil];
+                    [altert show];
+                    
+                }];
+            
+            }
         }
     }];
 }
@@ -52,27 +84,38 @@
     self.qrCodeViewfinder.center=self.view.center;
     [self.view addSubview:self.qrCodeViewfinder];
    
-    [self.qrDevice configurationpreviewLayer:^(CGRect *frame, CALayer *__autoreleasing *preViewLayer) {
+    [self.qrCodeDevice configurationpreviewLayer:^(CGRect *frame, CALayer *__autoreleasing *preViewLayer) {
         CGRect  rect=CGRectMake(self.qrCodeViewfinder.x, self.qrCodeViewfinder.y, self
                                 .qrCodeViewfinder.width, self.qrCodeViewfinder.height-20);
         *frame=rect;
         *preViewLayer=self.view.layer;
     }];
 
-    [self.qrDevice startScan];
-    [self.qrCodeViewfinder scanLineStartRoll];
-
+    
+    if (_qrCodeDevice) {
+        [_qrCodeDevice startScan];
+        [_qrCodeViewfinder scanLineStartRoll];
+    }
+    
+    
+    if (_qrCodeDevice) {
+         [self scanQRCodeCallBack];
+    }
+    
 }
 /** 停止扫描*/
 -(void)stopScan{
-    [self.qrCodeDevice stopScan];
-    [self.qrCodeViewfinder scanLineStopRoll];
+    if (_qrCodeDevice) {
+        [_qrCodeDevice stopScan];
+        [_qrCodeViewfinder scanLineStopRoll];
+    }
+   
 }
 /** 扫描回调*/
 -(void)scanQRCodeCallBack{
     
     WS(ws)
-    [self.qrCodeDevice scanResultCallBack:^(NSString *resultCode, NSString *errorStr) {
+    [_qrCodeDevice scanResultCallBack:^(NSString *resultCode, NSString *errorStr) {
         [ws stopScan];
         if (!errorStr) {
             UIAlertView *altert=[[UIAlertView alloc] initWithTitle:@"扫描结果" message:resultCode delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:nil, nil];
